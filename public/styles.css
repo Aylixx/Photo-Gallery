@@ -64,7 +64,6 @@ header {
     margin: 0 0 20vw 0;
     width: 14vw;
     height: 14vw;
-    border: solid white 0.15vw;
     border-radius: 50%;
     background-color: transparent;
     box-shadow: 0 5px 5px black;
@@ -167,4 +166,54 @@ footer {
 
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(255, 243, 227, 0.712);
+}
+
+/* ------------------------ Modal ---------------------- */
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#lightbox-image {
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#close-button {
+    color: grey;
+    font-size: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+
+#arrow-left {
+    color: grey;
+    font-size: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+}
+
+#arrow-right {
+    color: grey;
+    font-size: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 100px;
 }

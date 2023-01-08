@@ -5,8 +5,8 @@ const signature = document.querySelector(".logo");
 
 window.addEventListener("scroll", () => {
     let headerSpeed = window.scrollY / -2.5;
-    let skySpeed = window.scrollY / -8;
-    let treeSpeed = window.scrollY / -2;
+    let skySpeed = window.scrollY / -6;
+    let treeSpeed = window.scrollY / -1.5;
 
     if (window.innerWidth >= 768 && headerSpeed != 0) {
         header.style.backgroundPosition = "0" + headerSpeed + "px";

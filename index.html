@@ -11,7 +11,7 @@
 
 <body>
     <div class="wrapper">
-        <header>
+        <header class="header">
             <h1 id="title">Aylix</h1>
             <h2 id="title-2">Photos</h2>
             <!-- <img src="./public/images/pfp.png" alt="" id="pfp"> -->
@@ -23,13 +23,12 @@
         </header>
 
         <main>
-
             <section class="container">
 
                 <section class="gallery-container w-2 h-3">
                     <div class="gallery-item">
                         <div class="image">
-                            <img src="./public/images/milky-way-2.png"
+                            <img class="mobile-header" src="./public/images/milky-way-2.png"
                                 alt="Milky way galaxy in the night sky above a silhouette of pine trees and cat tails.">
                         </div>
                     </div>
@@ -263,18 +262,23 @@
 
             <footer>
                 All photos taken and edited by Colton Aylix.
+                <a href="https://www.instagram.com/aylix.photos/">
+                    <img src="./public/images/instagram-logo.png" alt="instagram logo">
+                </a>
             </footer>
-
-            <div id="lightbox">
-                <img id="lightbox-image" src="" alt="">
-                <span id="close-button">&times;</span>
-                <span id="arrow-left">&#10094;</span>
-                <span id="arrow-right">&#10095;</span>
-            </div>
         </main>
+
+
+        <!-- Lightbox that displays images when clicked -->
+        <div id="lightbox">
+            <img id="lightbox-image" src="" alt="">
+            <span id="close-button">&times;</span>
+            <span id="arrow-left">&#10094;</span>
+            <span id="arrow-right">&#10095;</span>
+        </div>
     </div>
 </body>
-<script src="scripts/script.js"></script>
 <script src="scripts/lightbox.js"></script>
+<script src="scripts/parallax.js"></script>
 
 </html>

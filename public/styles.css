@@ -7,18 +7,52 @@ body {
 }
 
 header {
+    /* perspective: 1px; */
+    /* background-image: url(images/milky-way-2.png); */
+    /* background-size: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.logo {
+    position: absolute;
+    top: 85%;
+    right: 0;
+    left: 3%;
+    bottom: 0;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-image: url(images/Logo.png);
+    z-index: 5;
+
+}
+
+.mobile-header-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
     background-image: url(images/milky-way-2.png);
     background-size: 100vw;
     background-repeat: no-repeat;
-    background-color: black;
     background-attachment: fixed;
-    width: 100vw;
-    height: 100vh;
+}
+
+.mobile-header-image-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url(images/milky-way-2-trees.png);
+    background-size: 100vw;
     background-repeat: no-repeat;
-    display: grid;
-    grid-template-rows: 75% 25%;
-    grid-template-areas: "image"
-        "title";
+    background-attachment: fixed;
 }
 
 main {
@@ -79,7 +113,7 @@ main {
     object-fit: cover;
 }
 
-.gallery-item .image .mobile-header {
+.gallery-item .image .not-on-mobile {
     display: none;
 }
 
@@ -155,13 +189,31 @@ footer img {
         background-size: 100vw;
         background-repeat: no-repeat;
         background-color: black;
+        background-attachment: fixed;
         width: 100vw;
         height: 51vw;
         background-repeat: no-repeat;
         display: grid;
-        grid-template-rows: 50% 50%;
+        grid-template-rows: 35% 65%;
         grid-template-areas: "title"
             "pfp";
+    }
+
+    .logo {
+        position: absolute;
+        top: 70vh;
+        right: 0;
+        left: 40%;
+        bottom: 0;
+        background-size: 40%;
+    }
+
+    .mobile-header-image {
+        display: none;
+    }
+
+    .mobile-header-image-2 {
+        display: none;
     }
 
     #title {
@@ -255,7 +307,7 @@ footer img {
         object-fit: cover;
     }
 
-    .gallery-item .image .mobile-header {
+    .gallery-item .image .not-on-mobile {
         display: block;
     }
 
